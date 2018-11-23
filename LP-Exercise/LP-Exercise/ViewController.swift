@@ -131,7 +131,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.newPrice.text = "\(rebajaPrecios[indexPath.row]) MXN"
         
         //let urlkey = imagenes[indexPath.row]
-        cell.myImage.image = UIImage(named: imagenes[indexPath.row])
+        
+        if let mediaPhotoUrlNotNil:String = imagenes[indexPath.row] {
+            if let mediaPhotoUrlToNSURL = NSURL(string: mediaPhotoUrlNotNil) {
+                if case let cell.myImage = NSData(contentsOf: mediaPhotoUrlToNSURL as URL) {
+                    //not nil
+                    
+                } else {
+                    //nil
+                }
+            } else {
+                //its nil
+            }
+        } else {
+            //its nil
+        }
         
         //cell.myImage = UIImageView(frame: imagenes[indexPath.row])
         
