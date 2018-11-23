@@ -17,6 +17,7 @@
 		ACE2152221A79DB600E1ACDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE2152021A79DB600E1ACDE /* LaunchScreen.storyboard */; };
 		ACE2152D21A79DB700E1ACDE /* LP_ExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE2152C21A79DB700E1ACDE /* LP_ExerciseTests.swift */; };
 		ACE2153821A79DB700E1ACDE /* LP_ExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE2153721A79DB700E1ACDE /* LP_ExerciseUITests.swift */; };
+		ACE2154721A7C22300E1ACDE /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE2154621A7C22300E1ACDE /* ViewControllerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		ACE2153321A79DB700E1ACDE /* LP-ExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LP-ExerciseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE2153721A79DB700E1ACDE /* LP_ExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LP_ExerciseUITests.swift; sourceTree = "<group>"; };
 		ACE2153921A79DB700E1ACDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE2154621A7C22300E1ACDE /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		E320085E7B57BC347898FAF2 /* Pods_LP_ExerciseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LP_ExerciseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F090A89207BB6ED71C9C1241 /* Pods-LP-ExerciseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LP-ExerciseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LP-ExerciseTests/Pods-LP-ExerciseTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +142,7 @@
 				ACE2151721A79DB400E1ACDE /* AppDelegate.swift */,
 				ACE2151921A79DB400E1ACDE /* ViewController.swift */,
 				ACE2151B21A79DB400E1ACDE /* Main.storyboard */,
+				ACE2154621A7C22300E1ACDE /* ViewControllerTableViewCell.swift */,
 				ACE2151E21A79DB600E1ACDE /* Assets.xcassets */,
 				ACE2152021A79DB600E1ACDE /* LaunchScreen.storyboard */,
 				ACE2152321A79DB600E1ACDE /* Info.plist */,
@@ -377,6 +380,7 @@
 			files = (
 				ACE2151A21A79DB400E1ACDE /* ViewController.swift in Sources */,
 				ACE2151821A79DB400E1ACDE /* AppDelegate.swift in Sources */,
+				ACE2154721A7C22300E1ACDE /* ViewControllerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
