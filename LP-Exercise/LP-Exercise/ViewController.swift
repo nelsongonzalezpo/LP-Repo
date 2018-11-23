@@ -26,6 +26,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var nombres: [Any] = []
     var precios: [Any] = []
     var rebajaPrecios: [Any] = []
+    var imagenes: [URL] = []
+
 
     
     
@@ -69,13 +71,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 let productListName = jsonProduct3[elements]["productDisplayName"]! as Any
                 let listPrice = jsonProduct3[elements]["listPrice"]! as Any
                 let minimumPromoPrice = jsonProduct3[elements]["minimumPromoPrice"]! as Any
-                let smImage: UIImage
+                let smImage: URL = jsonProduct3[elements]["lgImage"]! as! URL
                 
                 
                 //print(elements, nombre)
                 self.nombres.append(productListName)
                 self.precios.append(listPrice)
                 self.rebajaPrecios.append(minimumPromoPrice)
+                self.imagenes.append(smImage)
+                
+                print("THE IMAGES")
+                print(self.imagenes)
+
 
                 //self.nameLabel.text = jsonProduct3[elements]["productDisplayName"] as! String
             }
@@ -122,7 +129,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.myName.text = "\(nombres[indexPath.row])"
         cell.oldPrice.text = "\(precios[indexPath.row])"
         cell.newPrice.text = "\(rebajaPrecios[indexPath.row])"
-
+        
+        let urlkey = imagenes[indexPath.row]
+        
+//        if let url = URL(string: urlkey){
+//            do{
+//                let dataimg = try Data(contentsOf: url)
+//                cell.myImage.image = UIImage(data: dataimg)
+//            } catch let err{
+//                print("Error: \(err.localizedDescription)")
+//            }
+//        }
+        
+        
+        //cell.myImage.image = UIImageView()
 
         //print("The cell \(cell!)")
         return cell
@@ -130,7 +150,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        return 100
     }
 
 

@@ -58,6 +58,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="myImage" destination="4zT-1h-soD" id="7fA-3j-2Tq"/>
                                             <outlet property="myName" destination="mzs-yd-BXJ" id="zVT-eK-C7T"/>
                                             <outlet property="newPrice" destination="aJ6-k7-LsA" id="W56-Gh-2cK"/>
                                             <outlet property="oldPrice" destination="Y53-n0-rnv" id="TYk-cD-EYi"/>
